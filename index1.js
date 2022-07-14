@@ -44,7 +44,7 @@ function showShows(data) {
         <div class="bg-white rounded overflow-hidden shadow-md hover:shadow-lg">
             <div class="h-48 md:h-64 w-full bg-cover bg-no-repeat" style="background-image: url(${IMG_URL + poster_path})">
                 <span class="font-bold text-white">${title}</span>
-                <span class="block font-bold text-purple-400">${vote_average}</span>
+                <span class="block font-bold text-white">${vote_average}</span>
                 <span class="block text-white">${release_date}</span>
             </div>
         </div>
