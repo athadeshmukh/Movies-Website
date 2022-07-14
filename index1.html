@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div>
+        <div class="flex justify-between">
+            <div class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" class="p-3 h-16 w-16" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z"
+                        clip-rule="evenodd" />
+                </svg>
+                <h1 class="text-3xl font-bold my-3 pr-9 border-r-2 border-gray">Movies</h1>
+            </div>
+            <form class="flex m-4 gap-2" id="fill">
+                <svg xmlns="http://www.w3.org/2000/svg" class="border-gray border-l-2 h-8 w-8" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                        clip-rule="evenodd" />
+                </svg>
+                <input type="text" id="search" placeholder="Quick Search">
+            </form>
+            <div class="px-4 cursor-pointer md:justify-end md:hidden" id="toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="p-3 h-16 w-16" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="grid md:grid-cols-6">
+        <div class="md:col-span-1 bg-gray-200 md:flex md:justify-center">
+            <nav class="flex">
+                <div class="m-6 hidden md:block" id="list">
+                    <div class="p-4 hover:bg-white font-semibold text-grey hover:border-2 border-gray-300">
+                        <a href="@">Search Results</a>
+                    </div>
+                    <div class="p-4 hover:bg-white font-semibold text-grey hover:border-2 border-gray-300">
+                        <a href="@">All Team</a>
+                    </div>
+                    <div class="p-4 hover:bg-white font-semibold text-grey hover:border-2 border-gray-300">
+                        <a href="@">Core</a>
+                    </div>
+                    <div class="p-4 hover:bg-white font-semibold text-grey hover:border-2 border-gray-300">
+                        <a href="@">Developers</a>
+                    </div>
+                    <div class="p-4 hover:bg-white font-semibold text-grey hover:border-2 border-gray-300">
+                        <a href="@">Designers</a>
+                    </div>
+                    <div class="p-4 hover:bg-white font-semibold text-grey hover:border-2 border-gray-300">
+                        <a href="@">Mentors</a>
+                    </div>
+                    <div class="pad pt-56">
+                        <div class="p-4 text-center bg-black rounded text-white">
+                            <a href="@">+ ADD</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <main class="px-16 py-6 bg-gray-100 md:col-span-5">
+            <div class="mt-3 grid lg:grid-cols-4 gap-7 text-center" id="maind">
+
+            </div>
+    </div>
+    </main>
+    </div>
+
+    <script src="index1.js"></script>
+</body>
+
+</html>
